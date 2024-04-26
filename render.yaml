@@ -1,0 +1,14 @@
+services:
+  - name: api
+    type: web
+    env:
+      - key: PORT
+        value: "3000"
+      - key: DB_HOST
+        value: localhost
+      - key: DB_USER
+        value: root
+      - key: DB_DATABASE
+        value: college
+    startCommand: npm start
+    buildCommand: npm install
